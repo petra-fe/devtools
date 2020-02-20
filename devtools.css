@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#allWrapper {
+    max-width: 700px;
+    text-align: center;
+    border: 1px solid grey;
+    box-shadow: 7px 7px 25px #afafaf;
+    padding: 50px;
+    border-radius: 7px;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inactiveButton {
+    background: #d4d4d4;
+    color: grey;
+}
+
+.activeButton {
+    background: green;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.activeButton:hover {
+    opacity: .8;
+}
+
+.fancy {
+    border: none;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fc354c+0,0abfbc+100 */
+background: #fc354c; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #fc354c 0%, #0abfbc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #fc354c 0%,#0abfbc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #fc354c 0%,#0abfbc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc354c', endColorstr='#0abfbc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
